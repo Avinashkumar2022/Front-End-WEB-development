@@ -1,0 +1,48 @@
+/*  
+CSS gives style to raw HTML
+CSS stands for Cascading Style Sheets
+CSS is used to make websites responsive
+While HTML is used to structure a website CSS takes the responsibility of design.
+*/
+
+/* 
+!Basic syntax-> p{color:blue}
+
+*p is the selector here, it selects the element on which the modification needs to be applied
+
+*color is the property of the selected element that we want to change
+
+*blue is the value of the property that we want to set.
+
+? Here the color of the element p will be set to blue.
+
+We use class, ids to select elements.
+We can also use the tag name to select all the tags of that type.
+
+We can modify a group of selectors at one point
+
+*/
+
+/* 
+
+header,p.intro  
+{ 
+    background-color:red;
+    border-radius:3px;
+}
+
+*/
+
+/* 
+
+There are three ways to add CSS to the HTML.
+
+1) Inline CSS: CSS is added to the elements directly using style attribute.
+
+2)Internal CSS: CSS is kept inside the head tags in <style> tags.
+
+3) External CSS: CSS is kept separately inside  a .css file and include it into markup.
+
+
+*/
+
