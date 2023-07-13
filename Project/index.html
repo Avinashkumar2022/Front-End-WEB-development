@@ -24,10 +24,16 @@
             top: 20px;
         }
         
+        .left img{
+            width: 150px;
+            
+            filter:opacity(50%) invert(100%);
+        }
+
         .mid{
             border: 2px solid rgb(221, 255, 0); 
             display: block;
-            width: 30%;
+            width: 45%;
             margin: 20px auto;
         }
         
@@ -39,25 +45,44 @@
             top: 20px;
         }
 
+        .navbar{
+            display:inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+
+       }
+       .navbar li a{
+        color: white;
+        text-decoration: none;
+        /* margin: 8px; */
+        padding: 34px;
+       }
+
+       .navbar li a:hover,.navbar li a:active{
+        color: grey;
+
+       }
     </style>
 </head>
 <body>
     <header>
         <div class="left">
-            logo LEFT
+            <img src="https://cdn.dribbble.com/userupload/6001507/file/original-ca281f1f4efd6627fd11ea34d99c76b8.png?compress=1&resize=1504x1128" alt="LOGO">
         </div>
 
         <div class="mid">
-            <ul>
+            <ul class="navbar">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#">Interesting stuff</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>
         </div>
 
         <div class="right">
-            <input type="text">
+            <input type="text" placeholder="Search">
         </div>
     </header>
 </body>
