@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appu's Project</title>
     <link rel="stylesheet" href="CSS/styleproject.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
     <style>
         *{
             box-sizing: border-box;
@@ -17,7 +18,7 @@
         }
 
         .left{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             display: inline-block;
             position: absolute;
             left: 20px;
@@ -27,26 +28,71 @@
         .left img{
             width: 150px;
             
-            filter:opacity(50%) invert(100%);
+            filter:opacity(40%) invert(100%);
         }
 
         .mid{
-            border: 2px solid rgb(221, 255, 0); 
+            /* border: 2px solid rgb(221, 255, 0);  */
             display: block;
             width: 45%;
             margin: 20px auto;
         }
+
+        .mid a:hover{
+            border: 1px red solid;
+        }
         
         .right{
-            border: 2px solid rgb(13, 0, 255);
+            /* border: 2px solid rgb(13, 0, 255); */
             display: inline-block;
             position: absolute;
             right: 20px;
             top: 20px;
+            overflow: hidden;
+        }
+
+        .right input{
+            background-color: transparent;
+            color: azure;
+            width: 250px;
+            height: 30px;
+            border: none;
+            /* text-decoration: underline white; */
+
+        }
+
+        .right input:hover{
+            color: rgb(219, 202, 182);
+            background: #000;
+            border: 1px rgb(255, 166, 0) ;
+            border-style:solid;
+        }
+        
+        .btmrg{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+        .btmrg button{
+            color: white;
+            background: none;
+            padding: 3px 5px;
+            font-size:small;
+            font-weight: bold;
+            border: none;
+        }
+
+        .btmrg button:hover{
+            color: rgb(0, 0, 0);
+            background-color: rgb(149, 149, 149);
         }
 
         .navbar{
-            display:inline-block;
+            display:fixed;
+            font-family:Baloo bhai;
+            
         }
         .navbar li{
             display: inline-block;
@@ -57,12 +103,12 @@
         color: white;
         text-decoration: none;
         /* margin: 8px; */
-        padding: 34px;
+        padding: 30px;
        }
 
        .navbar li a:hover,.navbar li a:active{
         color: grey;
-
+        border: 0.1px rgb(255, 255, 255) solid;
        }
     </style>
 </head>
@@ -77,13 +123,20 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Interesting stuff</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Highlights</a></li>
             </ul>
         </div>
 
         <div class="right">
             <input type="text" placeholder="Search">
         </div>
+
+        <div class="btmrg">
+            <div class="btn">
+                <button>CONTACT US</button>
+            </div>
+        </div>
+
     </header>
 </body>
 </html>
