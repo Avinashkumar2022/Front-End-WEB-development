@@ -15,35 +15,41 @@
             padding: 0px;
             background:  url(https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg);
             color: white;
+            height: 100%;
+
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            background-size: cover;
+            /* background-size: cover; */
         }
 
         .left{
-            /* border: 2px solid red; */
-            display: inline-block;
+            border: 2px solid red;
+            display:inline-block;
             position: absolute;
-            left: 20px;
-            top: 20px;
+            left: 10px;
+            top: 10px;
         }
         
         .left img{
-            width: 150px;
+            width: 170px;
             
             filter:opacity(40%) invert(100%);
         }
 
         .mid{
-            /* border: 2px solid rgb(221, 255, 0);  */
+            border: 2px solid rgb(221, 255, 0); 
             display: block;
             width: 45%;
             margin: 20px auto;
         }
 
         .mid a:hover{
-            border: 1px red solid;
+            /* border: 1px red solid; */
         }
         
         .right{
-            /* border: 2px solid rgb(13, 0, 255); */
+            border: 2px solid rgb(13, 0, 255);
             display: inline-block;
             position: absolute;
             right: 20px;
@@ -64,14 +70,14 @@
         .right input:hover{
             color: rgb(219, 202, 182);
             background: #000;
-            border: 1px rgb(255, 166, 0) ;
+            border: 1px rgb(228, 190, 118) ;
             border-style:solid;
         }
         
         .btmrg{
-            /* border: 2px solid red; */
+            border: 2px solid red;
             display: inline-block;
-            position: absolute;
+            position:absolute;
             right: 20px;
             bottom: 20px;
         }
@@ -88,7 +94,7 @@
             color: rgb(0, 0, 0);
             background-color: rgb(149, 149, 149);
         }
-
+        
         .navbar{
             display:fixed;
             font-family:Baloo bhai;
@@ -98,25 +104,70 @@
             display: inline-block;
             font-size: 20px;
 
-       }
-       .navbar li a{
+        }
+        .navbar li a{
         color: white;
         text-decoration: none;
         /* margin: 8px; */
         padding: 30px;
+        /* border: 1px white solid; */
        }
 
        .navbar li a:hover,.navbar li a:active{
         color: grey;
-        border: 0.1px rgb(255, 255, 255) solid;
+        /* border: 2px rgb(255, 255, 255);
+        border-style:groove; */
+       }
+
+       .container
+       {
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        display: block;
+        position: absolute;
+        left: 600px;
+        top:300px;
+        font-size: 17px;
+        width: 40%;
+        font-family:'Times New Roman',Times, serif;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+       }
+
+       .submit{
+            color: white;
+            background: black;
+            padding: 3px 5px;
+            font-size:small;
+            font-weight: bold;
+            /* border: ; */
+            border-radius: 5px;
+            margin: 5px;
+           position: relative;
+           left: -10px
+        }
+        
+        .form-group input{
+            border: 1px greenyellow solid;
+            padding: 2px;
+            margin: 5px;
+            position:relative;
+            left: 130px;
+            text-align: center;
+            display: block;
+            width: 300px;
        }
     </style>
 </head>
 <body>
     <header>
         <div class="left">
-            <img src="https://cdn.dribbble.com/userupload/6001507/file/original-ca281f1f4efd6627fd11ea34d99c76b8.png?compress=1&resize=1504x1128" alt="LOGO">
+            <a href="">
+                <img src="https://cdn.dribbble.com/userupload/6001507/file/original-ca281f1f4efd6627fd11ea34d99c76b8.png?compress=1&resize=1504x1128" alt="LOGO" >
+            </a>
         </div>
+        
 
         <div class="mid">
             <ul class="navbar">
@@ -136,7 +187,37 @@
                 <button>CONTACT US</button>
             </div>
         </div>
-
     </header>
+
+    <div class="container">
+        <h1>Join Us on this journey</h1>
+        <form action="noaction.php">
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+ 
+                <button class="submit">
+                    Submit
+                </button>
+        </form>
+    </div>
+    <div class="exptext">
+        <h1>What is that we offer...</h1>
+    </div>
+
+
 </body>
 </html>
